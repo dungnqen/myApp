@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VATTUTOT - Kho linh kiện siết của nhà máy</title>
+
+    <meta name="robots" content="index,follow">
+    <meta property="og:url" content="https://vattutot.com.vn">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="vattutot.com.vn">
+    <meta name="keywords" content="bu-lông đai-ốc vít">
+    <meta property="og:title" content="VATTUTOT - Kho linh kiện siết của nhà máy">
+    <meta name="description" content="Kho hàng online của nhà máy.">
+    <meta property="og:description" content="Kho hàng online của nhà máy.">
+    <!-- <meta property="og:image" content="https://vattutot.com.vn/hinh-anh-8843"> -->
+    <link href="https://vattutot.com.vn/" rel="canonical">
+
+    <link href="https://vattutot.com.vn/" rel="canonical">
+    <link href="/django_project/static/CSS/toastr.min.css" rel="stylesheet">
+    <link href="/django_project/static/CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/django_project/static/CSS/font-awesome.min.css">
+    <link href="/django_project/static/CSS/ionicons.min.css" rel="stylesheet">
+    <link href="/django_project/static/CSS/AdminLTE.min.css" rel="stylesheet">
+    <link href="/django_project/static/CSS/_all-skins.min.css" rel="stylesheet">
+    <link href="/django_project/static/CSS/jquery-ui.min.css" rel="stylesheet">
+    <link href="/django_project/static/CSS/site.css" rel="stylesheet">
+    <link href="/django_project/static/CSS/ivy.css" rel="stylesheet">
+    <link href="/django_project/static/CSS/nifty.css" rel="stylesheet">
+    <link href="/django_project/static/CSS/mecsu.css" rel="stylesheet">
+    <link href="/django_project/static/CSS/ordering.min.css" rel="stylesheet">
+    <link href="/django_project/static/CSS/smoothproducts.css" rel="stylesheet">
+    <link href="/django_project/static/CSS/product-styles.css" rel="stylesheet">
+    <link href="/django_project/static/CSS/faq.css" rel="stylesheet">
+    <link href="/django_project/static/CSS/customCSS.css" rel="stylesheet">
+
+    <!-- <link rel="icon" type="image/png" href="https://vattutot.com.vn/favicon_mecsu.png"> -->
+
+</head>
+<body class="layout-top-nav" style="overflow-x: auto;">
+    <div class="wrapper">
+        <div class="pre-header">
+            <div class="container">
+                <div class="row">
+                    <!-- BEGIN TOP BAR LEFT PART -->
+                    <div class="col-md-2">
+                        <a class="navbar-brand" href="https://vattutot.com.vn/" style="padding-left: 0px">
+                            <img alt="CÔNG TY TNHH VẬT TƯ TỐT"
+                                src="/django_project/static/IMG/VTT_logo.jpg" width="240px">
+                        </a>
+                    </div>
+                    <!-- END TOP BAR LEFT PART -->
+
+                    <div class="col-md-7" style="padding-top: 50px;display: flex; justify-content: flex-end;">
+                        <a href="https://vattutot.com.vn/ho-tro-ky-thuat/catalogues" class="btn btn-link">Catalogues</a>
+                        <a href="https://blog.vattutot.com.vn/" class="btn btn-link">Blog</a>
+                        <a href="https://vattutot.com.vn/dich-vu-khach-hang" class="btn btn-link">Câu hỏi thường gặp</a>
+                        <a href="https://vattutot.com.vn/don-hang-cua-toi" class="btn btn-link">Theo dõi đơn hàng</a>
+                        <a href="https://vattutot.com.vn/bao-gia-cua-toi" class="btn btn-link">Theo dõi báo giá</a>
+                    </div>
+
+                    <!-- BEGIN TOP BAR MENU -->
+                    <div class="col-md-3">
+                        <div class="pull-right" style="height: 95px">
+                            <div style="float: left; display: inline-block; line-height: 95px;">
+                                <a href="https://vattutot.com.vn/tai-khoan"><img alt="user_icon"
+                                        src="/django_project/static/IMG/user.png"></a>
+                            </div>
+                            <div class="flex-box" style="max-width: 200px; height: 100%">
+                                <ul class="list-unstyled list-inline">
+                                    <li><a href="https://vattutot.com.vn/dang-nhap" style="color: #2E353B;">Đăng
+                                            nhập</a></li>
+                                    <li><a href="https://vattutot.com.vn/dang-ky" style="color: #2E353B;">Đăng ký</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END TOP BAR MENU -->
+                </div>
+            </div>
+        </div>
+        <!-- END TOP BAR -->
+        <div style="height: 60px; background-color:#007dc3;">
+            <div class="container">
+                <div style="float:left; padding-top: 8px;">
+                    <div class="btn-group" style="vertical-align:inherit">
+                        <a class="btn btn-default dropdown-toggle menu-item"
+                            style="margin: 0px; color: #2e353b; background-color: #fff; width: 285px; height: 44px; font-weight: bold"
+                            data-toggle="dropdown">
+                            DANH MỤC SẢN PHẨM
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-left" role="menu"
+                            style="margin-top: 8px; font-family: Roboto; font-style: normal; font-weight: normal; font-size: 16px;">
+                            <li>
+                                <a href="https://vattutot.com.vn/san-pham/linh-kien-lap-ghep-kep-chat.Jde"
+                                    style="color: #2e353b;">Bu-lông ốc vít</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="float:left; padding-top: 8px; margin-left: 15px">
+                    <!-- <form method="get" onsubmit="return FilterAjx.search_global(this)"> -->
+                    <div class="input-group" style="width: 580px;">
+                        <input type="text" name="gterm" class="form-control"
+                            style="font-size: 18px; height: 44px; color: #464646; background-color: #fff;"
+                            placeholder="Nhập MPN hoặc Tên Sản Phẩm để tìm kiếm">
+                        <span class="input-group-btn">
+                            <button type="submit" id="search-btn" class="btn btn-flat"
+                                style="height: 44px; background-color: #fec537;"><i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                    <!-- </form> -->
+                </div>
+                <div style="float:right; padding-top: 8px;">
+                    <a href="https://vattutot.com.vn/lien-he" class="btn btn-default menu-item"
+                        style="font-size: 16px; width: 155px; height: 44px; margin: 0px 15px 0px 0px;">Hỗ trợ đặc
+                        biệt</a>
+                    <a href="javascript:void(0)" onclick="Ordering.go_to_cart(this)" class="btn btn-flat menu-item"
+                        style="color: #2e353b; background-color: #fec537; font-size: 16px; margin: 0px; width: 155px; height: 44px;">
+                        <i class="fa fa-opencart" style="margin-right:6px"></i>
+                        Giỏ hàng
+                        <span id="cart_items_count"
+                            style="padding:0px 6px;font-weight:bold;color:rgb(255, 255, 255);background:rgb(253, 0, 0) none repeat scroll 0% 0%;border-radius:2px;display:none"></span>
+                    </a>
+                    <!-- <form id="dynamic_cart_form" action="https://vattutot.com.vn/gio-hang" method="POST">
+                        <input type="hidden" name="_csrf"
+                            value="4gMcFbpRUSJSa26IRhKc28iGlfdW086x38HIsjSwrdbTOy1iyWIEcRgDMbEDJrGLuNOipwG7u8CrgIzwfN3Gkw==">
+                        <input type="hidden" name="data">
+                    </form> -->
+                </div>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+
+        <section>
+
+            <div class="container" style="padding: 20px 10px;">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="https://vattutot.com.vn/san-pham/vong-bi-bac-dan.JWB?utm_source=website&amp;utm_medium=banner&amp;utm_campaign=banner-home2&amp;utm_id=website"
+                            target="_blank"><img alt="home_banner1"
+                                src="/django_project/static/IMG/Banner1.jpg"
+                                style="width: 100%"></a>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="https://vattutot.com.vn/san-pham/mui-khoan.NYMg?atts=4093" target="_blank"><img
+                                alt="home_banner2"
+                                src="/django_project/static/IMG/Banner2.jpg"
+                                style="width: 100%"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="new_container">
+                <div class="jumbotron" style="padding-top: 20px;padding-bottom: 20px; background-color: #F2F2F2; margin: 0px auto 20px; max-width: 1230px;">
+                    <div class="container">
+                        <h3 style="padding-bottom: 20px; font-weight: bold; font-size: 38px; display: inline-block;">
+                            HÃY ĐỂ
+                        </h3>
+                        <h3
+                            style="padding-bottom: 20px; font-weight: bold; font-size: 38px; display: inline-block; color: red;">
+                            VẬT TƯ TỐT
+                        </h3>
+                        <h3 style="padding-bottom: 20px; font-weight: bold; font-size: 38px; display: inline-block;"> HỖ TRỢ
+                            BẠN
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <div style="margin-bottom:10px;">
+                        <div class="category-section-header" style="margin-bottom:10px; padding: 10px 20px">
+                            <a href="https://vattutot.com.vn/san-pham/linh-kien-lap-ghep-kep-chat.Jde"
+                                onclick="FilterAjx.selectCategory(this); return false;"
+                                data-cat_link="/san-pham/linh-kien-lap-ghep-kep-chat.Jde" style="color: #2e3538">
+                                Bu-lông ốc vít </a>
+                            <a class="pull-right" data-toggle="collapse" href="https://vattutot.com.vn/#collapse1114"
+                                style="color: #2e3538">
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                        </div>
+                        <div id="collapse1114" class="collapse in">
+                            <div class="cat-detail g-grid-c10">
+                                <div class="g-grid-5">
+                                    <!-- luc giac chim dau tru -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
+                                            <img alt="hàng có sẵn"
+                                                src="/django_project/static/IMG/instock-tag-category.png"
+                                                style="position:absolute;top:5px;left:0px;width:50%">
+                                            <a href="https://vattutot.com.vn/san-pham/luc-giac-chim-dau-tru.html">
+                                                <img alt="Lục Giác Chìm Đầu trụ"
+                                                    src="/django_project/static/IMG/LUC GIAC CHIM DAU TRU.jpg"
+                                                    style="max-width:100%">
+                                            </a>
+                                        </div>
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/luc-giac-chim-dau-tru.html"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/luc-giac-chim.qDGO">
+                                                    Lục Giác Chìm Đầu Trụ </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- luc giac chim dau cau -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px;min-height: 225px;">
+                                            <img alt="hàng có sẵn"
+                                                src="/django_project/static/IMG/instock-tag-category.png"
+                                                style="position:absolute;top:5px;left:0px;width:50%">
+                                            <a href="https://vattutot.com.vn/san-pham/luc-giac-chim-dau-cau.html"
+                                                onclick="FilterAjx.selectCategory(this); return false;"
+                                                data-cat_link="/san-pham/luc-giac-chim.qDGO" rel="nofollow">
+                                                <img alt="Lục Giác Chìm Đầu Cầu"
+                                                    src="/django_project/static/IMG/LUC GIAC CHIM DAU CAU.jpg"
+                                                    style="max-width:100%; padding-top: 22px;">
+                                            </a>
+                                        </div>
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/luc-giac-chim-dau-cau.html"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/luc-giac-chim.qDGO">
+                                                    Lục Giác Chìm Đầu Cầu </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- luc giac chim dau bang -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px; min-height: 225px;">
+                                            <img alt="hàng có sẵn"
+                                                src="/django_project/static/IMG/instock-tag-category.png"
+                                                style="position:absolute;top:5px;left:0px;width:50%">
+                                            <a href="https://vattutot.com.vn/san-pham/luc-giac-chim.qDGO"
+                                                onclick="FilterAjx.selectCategory(this); return false;"
+                                                data-cat_link="/san-pham/luc-giac-chim.qDGO" rel="nofollow">
+                                                <img alt="Lục Giác Chìm Đầu Bằng"
+                                                    src="/django_project/static/IMG/LUC GIAC CHIM DAU BANG.jpg"
+                                                    style="max-width:100%;padding-top: 22px;">
+                                            </a>
+                                        </div>
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/luc-giac-chim.qDGO"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/luc-giac-chim.qDGO">
+                                                    Lục Giác Chìm Đầu Bằng </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- vit pake -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
+                                            <a href="https://vattutot.com.vn/san-pham/vit-pake.yN"
+                                                onclick="FilterAjx.selectCategory(this); return false;"
+                                                data-cat_link="/san-pham/vit-pake.yN" rel="nofollow">
+                                                <img alt="Bulong Pake"
+                                                    src="/django_project/static/IMG/Vit Pake..jpg"
+                                                    style="max-width:100%">
+                                            </a>
+                                        </div>
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/vit-pake.yN"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/vit-pake.yN">
+                                                    Bulong Pake </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- luc giac ngoai -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
+                                            <img alt="hàng có sẵn"
+                                                src="/django_project/static/IMG/instock-tag-category.png"
+                                                style="position:absolute;top:5px;left:0px;width:50%">
+                                            <a href="https://vattutot.com.vn/san-pham/bulong.Jea"
+                                                onclick="FilterAjx.selectCategory(this); return false;"
+                                                data-cat_link="/san-pham/bulong.Jea" rel="nofollow">
+                                                <img alt="Bulong"
+                                                    src="/django_project/static/IMG/bulong..jpg"
+                                                    style="max-width:100%">
+                                            </a>
+                                        </div>  
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/bulong.Jea"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/bulong.Jea">
+                                                    Bulong </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- ren cay -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
+                                            <img alt="ren cấy"
+                                                src="/django_project/static/IMG/instock-tag-category.png"
+                                                style="position:absolute;top:5px;left:0px;width:50%">
+                                            <a href="https://vattutot.com.vn/san-pham/ren-cay.J1O"
+                                                onclick="FilterAjx.selectCategory(this); return false;"
+                                                data-cat_link="/san-pham/ren-cay.J1O" rel="nofollow">
+                                                <img alt="Ren Cấy"
+                                                    src="/django_project/static/IMG/REN CAY.webp"
+                                                    style="max-width:100%;padding: 20px;">
+                                            </a>
+                                        </div>
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/ren-cay.J1O"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/ren-cay.J1O">
+                                                    Ren Cấy </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- vit tri -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 10px; margin-bottom: 10px;min-height: 225px;">
+                                            <a href="https://vattutot.com.vn/san-pham/vit-tri.lej"
+                                                onclick="FilterAjx.selectCategory(this); return false;"
+                                                data-cat_link="/san-pham/vit-tri.lej" rel="nofollow">
+                                                <img alt="Vít Trí"
+                                                    src="/django_project/static/IMG/VIT TRI.JPG"
+                                                    style="max-width:100%;padding-top: 20px;">
+                                            </a>
+                                        </div>
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/vit-tri.lej"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/vit-tri.lej">
+                                                    Vít Trí </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- dai oc -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
+                                            <img alt="hàng có sẵn"
+                                                src="/django_project/static/IMG/instock-tag-category.png"
+                                                style="position:absolute;top:5px;left:0px;width:50%">
+                                            <a href="https://vattutot.com.vn/san-pham/tan-dai-oc.GB"
+                                                onclick="FilterAjx.selectCategory(this); return false;"
+                                                data-cat_link="/san-pham/tan-dai-oc.GB" rel="nofollow">
+                                                <img alt="Tán - Đai Ốc"
+                                                    src="/django_project/static/IMG/DAI OC.webp"
+                                                    style="max-width:100%">
+                                            </a>
+                                        </div>
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/tan-dai-oc.GB"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/tan-dai-oc.GB">
+                                                    Tán - Đai Ốc </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- long den -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
+                                            <img alt="hàng có sẵn"
+                                                src="/django_project/static/IMG/instock-tag-category.png"
+                                                style="position:absolute;top:5px;left:0px;width:50%">
+                                            <a href="https://vattutot.com.vn/san-pham/long-den.WR"
+                                                onclick="FilterAjx.selectCategory(this); return false;"
+                                                data-cat_link="/san-pham/long-den.WR" rel="nofollow">
+                                                <img alt="Long Đen"
+                                                    src="/django_project/static/IMG/LONG ĐEN.jpg"
+                                                    style="max-width:100%">
+                                            </a>
+                                        </div>
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/long-den.WR"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/long-den.WR">
+                                                    Long Đen </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- phe cai -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
+                                            <img alt="hàng có sẵn"
+                                                src="/django_project/static/IMG/instock-tag-category.png"
+                                                style="position:absolute;top:5px;left:0px;width:50%">
+                                            <a href="https://vattutot.com.vn/san-pham/phe-gai.Je"
+                                                onclick="FilterAjx.selectCategory(this); return false;"
+                                                data-cat_link="/san-pham/phe-gai.Je" rel="nofollow">
+                                                <img alt="Phe Gài"
+                                                    src="/django_project/static/IMG/ring.jpg"
+                                                    style="max-width:100%">
+                                            </a>
+                                        </div>
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/phe-gai.Je"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/phe-gai.Je">
+                                                    Phe Gài </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- vit tu khoan -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
+                                            <a href="https://vattutot.com.vn/san-pham/vit-tu-khoan.wB"
+                                                onclick="FilterAjx.selectCategory(this); return false;"
+                                                data-cat_link="/san-pham/vit-tu-khoan.wB" rel="nofollow">
+                                                <img alt="Vít Tự Khoan"
+                                                    src="/django_project/static/IMG/VÍT TỰ KHOAN.jpg"
+                                                    style="max-width:100%">
+                                            </a>
+                                        </div>
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/vit-tu-khoan.wB"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/vit-tu-khoan.wB">
+                                                    Vít Tự Khoan </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- ty ren -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
+                                            <img alt="hàng có sẵn"
+                                                src="/django_project/static/IMG/instock-tag-category.png"
+                                                style="position:absolute;top:5px;left:0px;width:50%">
+                                            <a href="https://vattutot.com.vn/san-pham/ty-ren-guzong.NYK"
+                                                onclick="FilterAjx.selectCategory(this); return false;"
+                                                data-cat_link="/san-pham/ty-ren-guzong.NYK" rel="nofollow">
+                                                <img alt="Ty Ren - Guzong"
+                                                    src="/django_project/static/IMG/TY REN..jpg"
+                                                    style="max-width:100%">
+                                            </a>
+                                        </div>
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/ty-ren-guzong.NYK"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/ty-ren-guzong.NYK">
+                                                    Ty Ren - Guzong </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- tac ke -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
+                                            <img alt="hàng có sẵn"
+                                                src="/django_project/static/IMG/instock-tag-category.png"
+                                                style="position:absolute;top:5px;left:0px;width:50%">
+                                            <a href="https://vattutot.com.vn/san-pham/tac-ke.qm"
+                                                onclick="FilterAjx.selectCategory(this); return false;"
+                                                data-cat_link="/san-pham/tac-ke.qm" rel="nofollow">
+                                                <img alt="Tắc Kê"
+                                                    src="/django_project/static/IMG/tắc kê.jpg"
+                                                    style="max-width:100%">
+                                            </a>
+                                        </div>
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/tac-ke.qm"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/tac-ke.qm">
+                                                    Tắc Kê </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- rivet -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
+                                            <img alt="hàng có sẵn"
+                                                src="/django_project/static/IMG/instock-tag-category.png"
+                                                style="position:absolute;top:5px;left:0px;width:50%">
+                                            <a href="https://vattutot.com.vn/san-pham/rive.vxE"
+                                                onclick="FilterAjx.selectCategory(this); return false;"
+                                                data-cat_link="/san-pham/rive.vxE" rel="nofollow">
+                                                <img alt="Rivet"
+                                                    src="/django_project/static/IMG/RIVET NHÔM.jpg"
+                                                    style="max-width:100%">
+                                            </a>
+                                        </div>
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/rive.vxE"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/rive.vxE">
+                                                    Rivet </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- cum u -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
+                                            <a href="https://vattutot.com.vn/san-pham/cum-u.4y5"
+                                                onclick="FilterAjx.selectCategory(this); return false;"
+                                                data-cat_link="/san-pham/cum-u.4y5" rel="nofollow">
+                                                <img alt="Cùm U"
+                                                    src="/django_project/static/IMG/CÙM U...jpg"
+                                                    style="max-width:100%">
+                                            </a>
+                                        </div>
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/cum-u.4y5"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/cum-u.4y5">
+                                                    Cùm U </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- bulong mat -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
+                                            <a href="https://vattutot.com.vn/san-pham/bulong-mat-2.JxBy"
+                                                onclick="FilterAjx.selectCategory(this); return false;"
+                                                data-cat_link="/san-pham/bulong-mat-2.JxBy" rel="nofollow">
+                                                <img alt="Bulong Mắt"
+                                                    src="/django_project/static/IMG/BULONG MAT. (1).jpg"
+                                                    style="max-width:100%">
+                                            </a>
+                                        </div>
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/bulong-mat-2.JxBy"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/bulong-mat-2.JxBy">
+                                                    Bulong Mắt </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <!-- dai siet -->
+                                    <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default">
+                                        <div class="general-box-content"
+                                            style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
+                                            <img alt="hàng có sẵn"
+                                                src="/django_project/static/IMG/instock-tag-category.png"
+                                                style="position:absolute;top:5px;left:0px;width:50%">
+                                            <a href="https://vattutot.com.vn/san-pham/daisiet-2.JxBy"
+                                                onclick="FilterAjx.selectCategory(this); return false;"
+                                                data-cat_link="/san-pham/daisiet-2.JxBy" rel="nofollow">
+                                                <img alt="Bulong Mắt"
+                                                    src="/django_project/static/IMG/DAI SIET.jpg"
+                                                    style="max-width:100%">
+                                            </a>
+                                        </div>
+                                        <div class="general-box-header">
+                                            <h3>
+                                                <a href="https://vattutot.com.vn/san-pham/daisiet-2.JxBy"
+                                                    onclick="FilterAjx.selectCategory(this); return false;"
+                                                    data-cat_link="/san-pham/daisiet-2.JxBy">
+                                                    Đai Siết </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 30px">
+                </div>
+            </div>
+
+        </section>
+
+        <div class="button-support" style="bottom: 90px">
+            <a href="tel:0987918001">
+                <img src="/django_project/static/IMG/phone-solid.svg" height="40px" alt="PHONE_icon">
+            </a>    
+        </div>
+
+        <div class="button-support">  
+            <a href="mailto:sales@vattutot.com.vn">
+                <img src="/django_project/static/IMG/button-support.png" width="100%" alt="support_icon">
+            </a>
+        </div>
+
+        <div class="modal fade" id="global-notification-modal" tabindex="-1" role="dialog"
+            aria-labelledby="global-notification-modal-label" style="display: none;">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">×</span></button>
+                        <h4 class="modal-title" id="global-notification-modal-label"
+                            style="text-transform: uppercase;font-size:16px;font-weight:bold;color:red">Mũi khoan Nachi
+                        </h4>
+                        <!-- <h4 class="modal-title" id="global-notification-modal-label" style="text-transform: uppercase;font-size:16px;font-weight:bold;color:red"></h4> -->
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <a href="https://vattutot.com.vn/san-pham/mui-khoan.NYMg?atts=4093" target="_blank"><img
+                                    alt="Mũi khoan Nachi"
+                                    src="/django_project/static/IMG/big-sale-khoan-nachi.png"
+                                    style="width: 100%"></a>
+                            <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/GNu62jJ2uuw" title="Mua vật tư Fastener tại nhà" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope"></iframe> -->
+                        </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                            <div class="text-center">
+                                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Quay về giỏ hàng</button>
+                            </div>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <table style="border:none">
+                    <tbody>
+                        <tr>
+                            <td style="border:none">
+                            </td>
+                            <td style="width:25%;vertical-align:top;border:none">
+                                <a href="#" style="display: block; text-align: center;">
+                                    <img src="/django_project/static/IMG/footer_logo.jpg"
+                                        alt="logo footer" width="200" height="auto">
+                                </a>
+                                <p style="text-align:center;margin-top:10px;font-size:16px;display: block;">
+                                    KHO BU-LÔNG CỦA NHÀ MÁY
+                                </p>
+                            </td>
+                            <td
+                                style="width:25%;vertical-align:top;padding-left:60px;border:none;font-family:&#39;Noto Sans&#39;;font-size:16px;color: #f2f2f2;">
+                                <h2
+                                    style="margin-top:0px;color:white;font-family:&#39;Noto Sans&#39;;font-size:16px;text-transform:uppercase">
+                                    Chính sách mua hàng</h2>
+                                <hr align="left" style="width: 25%;">
+                                <p style="margin-bottom:6px"><a
+                                        href="https://vattutot.com.vn/cau-hoi-thuong-gap/thanh-toan"
+                                        target="_blank">Hình thức thanh toán</a>
+                                </p>
+                                <!-- <p style="margin-bottom:6px"><a
+                                        href="https://vattutot.com.vn/cau-hoi-thuong-gap/dat-hang#huong-mua-hang-tren-website"
+                                        target="_blank">Hướng dẫn mua online</a>
+                                </p> -->
+                                <p style="margin-bottom:6px"><a href="https://vattutot.com.vn/dich-vu-khach-hang"
+                                        target="_blank">Câu hỏi thường gặp</a>
+                                </p>
+                                <p style="margin-bottom:6px"><a
+                                        href="https://vattutot.com.vn/cau-hoi-thuong-gap/doi-hang" target="_blank">Chính
+                                        sách đổi trả</a>
+                                </p>
+                            </td>
+                            <td
+                                style="width:25%;vertical-align:top;padding-left:60px;border:none;font-family:&#39;Noto Sans&#39;;font-size:16px;color: #f2f2f2;">
+                                <h2
+                                    style="margin-top:0px;color:white;font-family:&#39;Noto Sans&#39;;font-size:16px;text-transform:uppercase">
+                                    Về Vật tư tốt</h2>
+                                <hr align="left" style="width: 25%;">
+                                <p style="margin-bottom:6px"><a
+                                        href="https://vattutot.com.vn/about/"
+                                        target="_blank">Giới thiệu công ty</a>
+                                </p>
+                                <p style="margin-bottom:6px"><a
+                                        href="https://vattutot.com.vn/privacy" target="_blank">Chính
+                                        sách bảo mật người dùng</a>
+                                </p>
+                                <p style="margin-bottom:6px"><a
+                                        href="https://vattutot.com.vn/cau-hoi-thuong-gap/khach-hang-vip"
+                                        target="_blank">Khách hàng VIP</a>
+                                </p>
+                                <!-- <p style="margin-bottom:6px"><a href="https://blog.vattutot.com.vn/"
+                                        target="_blank">Blog kỹ thuật cơ khí</a>
+                                </p> -->
+                            </td>
+                            <td
+                                style="width:25%;vertical-align:top;padding-left:60px;border:none;font-family:&#39;Noto Sans&#39;;font-size:16px;color: #f2f2f2;">
+                                <h2
+                                    style="margin-top:0px;color:white;font-family:&#39;Noto Sans&#39;;font-size:16px;text-transform:uppercase">
+                                    Thông tin liên hệ</h2>
+                                <hr align="left" style="width: 25%;">
+                                <p style="font-size:14px">Văn phòng/Kho hàng: Thôn Dương Húc, Xã Đại Đồng, Huyện Tiên
+                                    Du, Tỉnh Bắc Ninh</p>
+                                <p style="font-size:14px">Giờ làm việc: 8h00 – 17h00 (T2-T7)</p>
+                                <a href="tel:0987918001">
+                                    <p style="font-size:14px">Tổng đài CSKH: 0987 918 001</p>
+                                </a>
+                                <a href="mailto:sales@vattutot.com.vn">
+                                    <p style="font-size:14px">Email: sales@vattutot.com.vn</p>
+                                </a>
+                            </td>
+                            <td style="border:none">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border:none">
+                            </td>
+                            <td colspan="3" style="color:white;padding-top:10px;border:none;font-size:14px">© 2022. Công
+                                ty TNHH Vật tư tốt. Chịu trách nhiệm nội dung: Nguyễn Văn Tuấn. Giấy chứng nhận Đăng ký
+                                Kinh doanh số 2301212361 do Sở Kế hoạch và Đầu tư Tỉnh Bắc Ninh cấp ngày 10/06/2022
+                                <!-- <a href="https://www.dmca.com/Protection/Status.aspx?ID=be7aa439-eb56-4e40-8cad-5071286d26d5&amp;refurl=https://vattutot.com.vn/"
+                                    title="DMCA.com Protection Status" class="dmca-badge">
+                                    <img src="/django_project/static/IMG/dmca-badge-w100-5x1-10.png"
+                                        alt="DMCA.com Protection Status">
+                                </a> -->
+                            </td>
+                            <td style="border:none;padding-left:60px;padding-top:10px">
+                                <a href="http://online.gov.vn/Home/WebDetails/71868" target="_blank"><img
+                                        rel="width:150px" alt="" title=""
+                                        src="/django_project/static/IMG/logoSaleNoti.png"
+                                        style="width:150px"></a>
+                            </td>
+                            <td style="border:none">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </footer>
+    </div>
+    <script src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/jquery.min.js.download"></script>
+    <script src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/toastr.js.download"></script>
+    <script src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/bootstrap.min.js.download"></script>
+    <script src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/yii.js.download"></script>
+    <script src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/app.js.download"></script>
+    <script src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/jquery-ui.min.js.download"></script>
+    <script src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/ResizeSensor.js.download"></script>
+    <script src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/sticky-sidebar.js.download"></script>
+    <script src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/filterajx.js.download"></script>
+    <script src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/ordering.separate.min.js.download"></script>
+    <script src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/smoothproducts.min.js.download"></script>
+    <script src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/js-language.js.download"></script>
+    <script src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/js-lang-messages"></script>
+
+    <!-- script hien banner -->
+    <!-- <script>jQuery(function ($) {
+            Ordering.cart_count();
+            jQuery(document).ready(function ($) {
+                $("#global-notification-modal").modal();
+                $("#global-notification-modal").on("hidden.bs.modal", function (e) {
+                    $("#global-notification-modal iframe").attr("src", $("#global-notification-modal iframe").attr("src"));
+                });
+            })
+
+            function hidePopover(event) {
+                $('.popover').popover('hide');
+            }
+            $('.popover-btn').on('shown.bs.popover', function () {
+                document.addEventListener('scroll', hidePopover, true);
+            });
+            $('.popover-btn').on('hide.bs.popover', function () {
+                document.removeEventListener('scroll', hidePopover, true);
+            });
+            $(document).on('mouseleave', '.popover', function () {
+                $('.popover').popover('hide');
+            });
+            try { $.fn.bootstrapBtn = $.fn.button.noConflict(); } catch (err) { }
+        });</script> -->
+
+    <!-- unknown script -->
+    <!-- <script type="text/javascript">
+        $(function () {
+            $(document).on("click", "a.ivy-file-waiting", function () { return FrontEndUtils.PDFDownload(this); });
+            $(document).on("click", "a.ivy-file-printing", function () { return FrontEndUtils.PDFPrint(this); });
+        });
+    </script> -->
+    <script src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/imagesloaded.pkgd.min.js.download"></script>
+    <!-- <script src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/DMCABadgeHelper.min.js.download"></script> -->
+
+    <!-- <iframe id="_hjSafeContext_64900761" src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/saved_resource.html"
+        style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"
+        akb-custom-iframe-id="1"></iframe><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame"
+        id="_hjRemoteVarsFrame"
+        src="./VATTUTOT - Kho linh kiện siết của nhà máy_files/box-c6ca1c87e308a39aabb76b56ba54398b.html"
+        style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe> -->
+</body>
+</html>
