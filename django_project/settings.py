@@ -25,8 +25,8 @@ SECRET_KEY = '1e3907af400969d58dee294d74bf1620'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['localhost', 'sonhanh.vn', '139.59.121.0', 'www.sonhanh.vn', '127.0.0.1']
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'sonhanh.vn', '139.59.121.0', 'www.sonhanh.vn', '127.0.0.1']
+# ALLOWED_HOSTS = []
 
 # Application definition
 
