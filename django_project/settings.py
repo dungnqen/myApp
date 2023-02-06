@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-import netifaces
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,23 +25,13 @@ SECRET_KEY = '1e3907af400969d58dee294d74bf1620'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# Find out what the IP addresses are at run time
-# This is necessary because otherwise Gunicorn will reject the connections
-def ip_addresses():
-    ip_list = []
-    for interface in netifaces.interfaces():
-        addrs = netifaces.ifaddresses(interface)
-        for x in (netifaces.AF_INET, netifaces.AF_INET6):
-            if x in addrs:
-                ip_list.append(addrs[x][0]['addr'])
-    return ip_list
-
-ALLOWED_HOSTS = ip_addresses()
-
+ALLOWED_HOSTS = ['localhost', 'sonhanh.vn', '139.59.121.0', 'www.sonhanh.vn', '127.0.0.1', 'vattutot.com.vn', 'www.vattutot.com.vn']
+# ALLOWED_HOSTS = []
 
 # Application definition
 
 INSTALLED_APPS = [
+    'django_project',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -63,10 +52,13 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'django_project.urls'
 
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'templates/'),
+)
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # 'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -85,15 +77,22 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'django',
+#         'USER': 'django',
+#         'PASSWORD': '507fd545e33d880c4d7795e5563df5f6',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#         'OPTIONS': {'sslmode': 'require'},
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django',
-        'USER': 'django',
-        'PASSWORD': '507fd545e33d880c4d7795e5563df5f6',
-        'HOST': 'localhost',
-        'PORT': '5432',
-        'OPTIONS': {'sslmode': 'require'},
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -135,3 +134,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT=os.path.join(BASE_DIR, "static")

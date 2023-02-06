@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 22, 2020, 11:31:34 AM
+    Author     : Minh Nguyen
+*/
+
+.vertical-spacer {
+    margin:0px 16px;
+    background:rgb(236, 236, 236);
+    width:1.2px;
+}
+
+.horizontal-spacer {
+    margin:16px 0px 12px 0px;
+    background:rgb(236, 236, 236);
+    height:1.2px;
+}
+
+.product-breadcrumb {
+    margin-top: 4px;
+    margin-bottom:6px;
+    font-size: 13px;
+    font-weight:bold;
+    color: #1581c4;
+    font-family:Verdana, Geneva, sans-serif;
+}
+
+.product-details .price {
+    color: rgb(255, 52, 37);
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.product_details .quantity input {
+    font-size: 40px;
+}
+
+.first-block h1 {
+    margin-top: 0px;
+    font-size:32px;
+    margin-bottom:4px;
+}
