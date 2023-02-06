@@ -25,11 +25,7 @@ SECRET_KEY = '1e3907af400969d58dee294d74bf1620'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-<<<<<<< HEAD
-ALLOWED_HOSTS = ['localhost', 'sonhanh.vn', '139.59.121.0', 'www.sonhanh.vn', '127.0.0.1', 'vattutot.com.vn', 'www.vattutot.com.vn']
-=======
-ALLOWED_HOSTS = ['localhost', 'sonhanh.vn', '139.59.121.0', 'www.sonhanh.vn', '127.0.0.1']
->>>>>>> 07b27c818bbe607e8c1232730a8b26089c7b2e76
+ALLOWED_HOSTS = ['localhost', 'sonhanh.vn', '139.59.121.0', 'www.sonhanh.vn', '127.0.0.1', 'vattutot.com.vn', 'www.vattutot.com.vn', 'quangdung.shop']
 # ALLOWED_HOSTS = []
 
 # Application definition
@@ -138,4 +134,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT=os.path.join(BASE_DIR, "static")
+STATIC_ROOT=os.path.join(BASE_DIR, "django_project/static")
