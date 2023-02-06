@@ -25,7 +25,11 @@ SECRET_KEY = '1e3907af400969d58dee294d74bf1620'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['localhost', 'sonhanh.vn', '139.59.121.0', 'www.sonhanh.vn', '127.0.0.1', 'vattutot.com.vn', 'www.vattutot.com.vn']
+=======
+ALLOWED_HOSTS = ['localhost', 'sonhanh.vn', '139.59.121.0', 'www.sonhanh.vn', '127.0.0.1']
+>>>>>>> 07b27c818bbe607e8c1232730a8b26089c7b2e76
 # ALLOWED_HOSTS = []
 
 # Application definition
