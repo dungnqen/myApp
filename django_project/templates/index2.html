@@ -7,15 +7,12 @@
 <div id="collapse1114" class="collapse in">
     <div class="cat-detail g-grid-c10">
         <div class="g-grid-5">
-
             <!-- for each -->
             {% for item in items %}
             <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default; position: relative;">
                 <div class="general-box-content"
                     style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
-                    <img alt="hàng có sẵn"
-                        src="{% static 'img/instock-tag-category.png' %}"
-                        style="position:absolute;top:5px;left:0px;width:50%">
+                    <img alt="hàng có sẵn" src="{% static 'img/instock-tag-category.png' %}" style="position:absolute;top:5px;left:0px;width:50%">
                     <a href="/{{ item.url_path }}.html">
                         <img alt="{{ item.name }}"
                             src="{% static "" %}img/{{ item.img_path }}"
