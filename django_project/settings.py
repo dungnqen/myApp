@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '1e3907af400969d58dee294d74bf1620'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'sonhanh.vn', '139.59.121.0', 'www.sonhanh.vn', '127.0.0.1', 'vattutot.com.vn', 'www.vattutot.com.vn', 'quangdung.shop']
+ALLOWED_HOSTS = ['localhost', 'sonhanh.vn', '139.59.121.0', 'www.sonhanh.vn', '127.0.0.1', 'vattutot.com.vn', 'www.vattutot.com.vn', 'quangdung.shop', 'www.quangdung.shop']
 # ALLOWED_HOSTS = []
 
 # Application definition
@@ -129,6 +129,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+CSRF_TRUSTED_ORIGINS = ['https://vattutot.com.vn','https://www.vattutot.com.vn']
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
