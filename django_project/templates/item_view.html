@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block body %}
+<h1>{{ item.name }}</h1>
+<div class="flex-layout">
+    <!-- <div class="flex-column-left general-box-content g-grid-cell general-box-icon"> -->
+    <div class="flex-column-left general-box-content g-grid-cell general-box-icon" style="width: fit-content;">
+
+        <img alt="{{ item.name }}"
+            src="{% static "" %}img/{{ item.img_path }}"
+            style="max-width:100%">
+    </div>
+
+    <div class="flex-column-right">
+
+    </div>
+</div>
+
+
+
+{% endblock %}
