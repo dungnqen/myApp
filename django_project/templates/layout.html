@@ -18,10 +18,6 @@
     <meta property="og:description" content="Kho hàng online của nhà máy.">
     <!-- <meta property="og:image" content="https://vattutot.com.vn/hinh-anh-8843"> -->
     <link href="https://vattutot.com.vn/" rel="canonical">
-    
-    <!-- test -->
-    
-    <!-- end test -->
 
     <link href="{% static 'css/toastr.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
@@ -38,7 +34,7 @@
     <link href="{% static 'css/smoothproducts.css' %}" rel="stylesheet">
     <link href="{% static 'css/product-styles.css' %}" rel="stylesheet">
     <link href="{% static 'css/faq.css' %}" rel="stylesheet">
-    <link href="{% static 'css/customCSS.css' %}" rel="stylesheet">
+    <link href="{% static 'css/customCSScommon.css' %}" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="{% static 'img/favicon-32x32.png' %}">
 
@@ -100,7 +96,7 @@
                         <ul class="dropdown-menu dropdown-menu-left" role="menu"
                             style="margin-top: 8px; font-family: Roboto; font-style: normal; font-weight: normal; font-size: 16px;">
                             <li>
-                                <a href="/san-pham/linh-kien-lap-ghep-kep-chat.Jde"
+                                <a href="/san-pham/linh-kien-lap-ghep-kep-chat"
                                     style="color: #2e353b;">Bu-lông ốc vít</a>
                             </li>
                         </ul>
@@ -184,16 +180,6 @@
                 <div>
                     <div style="margin-bottom:10px;">
                         <!-- category list -->
-                        <div class="category-section-header" style="margin-bottom:10px; padding: 10px 20px">
-                            <a href="/san-pham/linh-kien-lap-ghep-kep-chat.Jde"
-                                onclick="FilterAjx.selectCategory(this); return false;"
-                                data-cat_link="/san-pham/linh-kien-lap-ghep-kep-chat.Jde" style="color: #2e3538">
-                                Bu-lông ốc vít </a>
-                            <a class="pull-right" data-toggle="collapse" href="/#collapse1114"
-                                style="color: #2e3538">
-                                <i class="fa fa-chevron-down"></i>
-                            </a>
-                        </div>
                         <!-- body block -->
                         {% block body %}
 

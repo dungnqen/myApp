@@ -1,23 +1,33 @@
 {% extends "layout.html" %}
-
+{% load define_action %}
 {% load static %}
 
 {% block body %}
-<h1>{{ item.name }}</h1>
-<div class="flex-layout">
-    <!-- <div class="flex-column-left general-box-content g-grid-cell general-box-icon"> -->
-    <div class="flex-column-left general-box-content g-grid-cell general-box-icon" style="width: fit-content;">
+    <div id="tit">
+        <p>Linh kiện siết chặt</p>
+        <h1>{{ item.get_name_display }}</h1>
+        <dl>
+            <dt>
+                <span>Vật liệu</span>
+            </dt>
+            <dd>Thép・SUS304・SUS201</dd>
+        </dl>
+    </div>
+    <div class="flex-layout">
+        <div class="flex-column-left" style="display: inline-block;">
 
-        <img alt="{{ item.name }}"
-            src="{% static "" %}img/{{ item.img_path }}"
-            style="max-width:100%">
+            <img alt="{{ item.get_name_display }}"
+                src="{% static "" %}img/{{ item.img_path }}"
+                style="max-width:100%; width: 200px;">
+        </div>
+
+        <div class="flex-column-right" style="display: inline-block;">
+            
+        </div>
     </div>
 
-    <div class="flex-column-right">
-
+    <div style="margin-top: 24px;">
+        <p>{{ item.item_desc }}</p>
     </div>
-</div>
-
-
 
 {% endblock %}

@@ -25,5 +25,5 @@ app_name = "django_project"
 urlpatterns = [
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
-    path('<item_path>/', views.item_view, name="item_view")
+    path('<item_path>', views.item_view, name="item_view")
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
