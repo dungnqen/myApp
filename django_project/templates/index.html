@@ -5,7 +5,7 @@
 {% block body %}
 
 <div class="category-section-header" style="margin-bottom:10px; padding: 10px 20px">
-    <a href="/san-pham/linh-kien-lap-ghep-kep-chat"
+    <a href="#collapse1114"
         data-cat_link="/san-pham/linh-kien-lap-ghep-kep-chat" style="color: #2e3538">
         Bu-lông ốc vít </a>
     <a class="pull-right" data-toggle="collapse" href="/#collapse1114"
@@ -19,14 +19,14 @@
         <div class="g-grid-5">
             <!-- for each -->
             {% for item in items %}
-            <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default; position: relative;">
+            <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default; position: relative; height: 260px;">
                 <div class="general-box-content"
                     style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
                     <img alt="hàng có sẵn" src="{% static 'img/instock-tag-category.png' %}" style="position:absolute;top:5px;left:0px;width:50%">
-                    <a href="/{{ item.url_path }}">
+                    <a href="/{{ item.url_path }}" style="position: absolute; bottom: -155px; left: 0px; width: 100%;">
                         <img alt="{{ item.name }}"
                             src="{% static "" %}img/{{ item.img_path }}"
-                            style="max-width:100%">
+                            style="max-width: 100%; max-height: 140px;">
                     </a>
                 </div>
                 <div class="general-box-header" style="position: absolute; bottom: 0px; width: 100%;">
