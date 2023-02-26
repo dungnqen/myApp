@@ -53,3 +53,24 @@ class Screw(Product):
 
     def __str__(self):
         return f"{self.name}-{self.material}-M{self.M}X{int(self.length)}"
+
+class linearMotion(models.Model):
+    name = models.TextField(choices=[
+        ("LG", "Thanh Trượt"),
+        ("LS", "Vít me Đai ốc"),
+        ("LH", "Trục trượt"),
+        ("BS", "Bạc trượt"),
+        ("CC", "Máng cáp"),
+        ("SU", "Gối đỡ"),
+        ("SS", "Đỡ trục"),
+        ("SC", "Kẹp trục"),
+        ("AA", "Tay robot"),
+    ])
+    img_path = models.CharField(max_length=64)
+    in_stock_flag = models.BooleanField()
+    url_path = models.CharField(max_length=64)
+    item_desc = models.TextField(blank=True)
+    item_tech_info = models.TextField(blank=True)
+
+    def __str__(self):
+        return f"{self.get_name_display()}"

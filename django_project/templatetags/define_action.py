@@ -2,5 +2,7 @@ from django import template
 register = template.Library()
 
 @register.simple_tag
-def addToSet(*args):
-  return args
+def addHtmlbulonglucgiacchimdautru():
+  return """
+  <p>123 test</p>
+  """
