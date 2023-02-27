@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% load static %}
-
+5
 
 {% block customerCSS %}
     <link href="{% static 'css/customeCSSItemView.css' %}" rel="stylesheet">
@@ -18,7 +18,7 @@
         </dl>
     </div>
     <div class="flex-layout" style="display: flex; justify-content: space-between;">
-        <div class="flex-column-left" style="width: 18%;">
+        <div class="flex-column-left general-box-icon" style="width: 18%;">
 
             <img alt="{{ item.get_name_display }}"
                 src="{% static "" %}img/{{ item.img_path }}"
@@ -31,11 +31,11 @@
     </div>
 
     <div style="margin-top: 24px;">
-        <p>{{ item.item_desc }}</p>
+        <p>{{ item.item_tech_info }}</p>
     </div>
 
-    <div class="quote">
-        <p>{{ item }}</p>
+    <div class="detailsPage">
+        <p>{% include detailsPage %}</p>
     </div>
 
 {% endblock %}

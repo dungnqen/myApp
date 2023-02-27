@@ -33,6 +33,7 @@ class Item(models.Model):
     url_path = models.CharField(max_length=64)
     item_desc = models.TextField(blank=True)
     item_tech_info = models.TextField(blank=True)
+    orderIndex = models.PositiveIntegerField(choices=[(i, str(i)) for i in range(1,100)])
 
     def __str__(self):
         return f"{self.get_name_display()}"

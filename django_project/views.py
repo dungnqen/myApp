@@ -10,10 +10,12 @@ def index(request):
   })
 
 def item_view(request, item_path):
-  item = Item.objects.filter(url_path=item_path)
+  item = Item.objects.filter(url_path=item_path).first()
   if not item:
-    item = linearMotion.objects.filter(url_path=item_path)
+    item = linearMotion.objects.filter(url_path=item_path).first()
 
+  # test = "test.html"
   return render(request, "item_view.html", {
-  "item": item
+  "item": item,
+  "detailsPage": f"detailsPage/{item_path}.html"
   })
