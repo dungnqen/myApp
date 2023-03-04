@@ -75,3 +75,19 @@ class linearMotion(models.Model):
 
     def __str__(self):
         return f"{self.get_name_display()}"
+
+class cuttingTools(models.Model):
+    name = models.TextField(choices=[
+        ("EM", "Dao phay ngón"),
+        ("DB", "Mũi khoan"),
+        ("TT", "Dao tiện"),
+        ("HT", "Mũi Taro ren"),
+    ])
+    img_path = models.CharField(max_length=64)
+    in_stock_flag = models.BooleanField()
+    url_path = models.CharField(max_length=64)
+    item_desc = models.TextField(blank=True)
+    item_tech_info = models.TextField(blank=True)
+
+    def __str__(self):
+        return f"{self.get_name_display()}"

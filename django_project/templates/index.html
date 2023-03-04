@@ -20,20 +20,19 @@
             <!-- for each -->
             {% for item in items %}
             <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default; position: relative; height: 260px;">
+                <a href="/{{ item.url_path }}" style="width: 100%; height: 100%;display:block;position: absolute;z-index: 2;top: 0px; left: 0px;"></a>
                 <div class="general-box-content"
                     style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
                     <img alt="hàng có sẵn" src="{% static 'img/instock-tag-category.png' %}" style="position:absolute;top:5px;left:0px;width:50%">
-                    <a href="/{{ item.url_path }}" style="position: absolute; bottom: -155px; left: 0px; width: 100%;">
-                        <img alt="{{ item.name }}"
-                            src="{% static "" %}img/{{ item.img_path }}"
-                            style="max-width: 100%; max-height: 140px;">
-                    </a>
                 </div>
+                <a style="position: absolute; text-align: center; top: 50%; transform: translateY(-50%); left: 0px; width: 100%;">
+                    <img alt="{{ item.name }}"
+                        src="{% static "" %}img/{{ item.img_path }}"
+                        style="max-width: 100%; max-height: 140px;">
+                </a>
                 <div class="general-box-header" style="position: absolute; bottom: 0px; width: 100%;">
                     <h3>
-                        <a href="/{{ item.url_path }}"
-                            onclick="FilterAjx.selectCategory(this); return false;"
-                            data-cat_link="/{{ url_path }}">
+                        <a style="font-weight: 400;">
                             {{ item.get_name_display }}
                         </a>
                     </h3>
@@ -63,25 +62,64 @@
             <!-- for each -->
             {% for linearMotion in linearMotions %}
             <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default; position: relative; height: 260px;">
+                <a href="/{{ linearMotion.url_path }}" style="width: 100%; height: 100%;display:block;position: absolute;z-index: 2;top: 0px; left: 0px;"></a>
                 <div class="general-box-content"
                     style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
                     <img alt="hàng có sẵn" src="{% static 'img/instock-tag-category.png' %}" style="position:absolute;top:5px;left:0px;width:50%">
-                    <a href="/{{ linearMotion.url_path }}" style="position: absolute; bottom: -155px; left: 0px; width: 100%;">
-                        <img alt="{{ linearMotion.name }}"
-                            src="{% static "" %}img/{{ linearMotion.img_path }}"
-                            style="max-width: 100%; max-height: 140px;">
-                    </a>
                 </div>
+                <a style="position: absolute; text-align: center; top: 50%; transform: translateY(-50%); left: 0px; width: 100%;">
+                    <img alt="{{ linearMotion.name }}"
+                        src="{% static "" %}img/{{ linearMotion.img_path }}"
+                        style="max-width: 100%; max-height: 140px;">
+                </a>
                 <div class="general-box-header" style="position: absolute; bottom: 0px; width: 100%;">
                     <h3>
-                        <a href="/{{ linearMotion.url_path }}"
-                            onclick="FilterAjx.selectCategory(this); return false;"
-                            data-cat_link="/{{ url_path }}">
+                        <a style="font-weight: 400;">
                             {{ linearMotion.get_name_display }}
                         </a>
                     </h3>
                 </div>
             </div>
+            {% endfor %}
+            <!-- end -->
+
+        </div>
+    </div>
+</div>
+
+
+<!-- cuttingTools -->
+<div class="category-section-header" style="margin-bottom:10px; padding: 10px 20px">
+    <a href="#cuttingtools" style="color: #2e3538">Dụng cụ cắt</a>
+    <a class="pull-right" data-toggle="collapse" href="/#cuttingtools" style="color: #2e3538">
+        <i class="fa fa-chevron-down"></i>
+    </a>
+</div>
+
+<div id="cuttingtools" class="collapse in" style="margin-bottom: 40px;">
+    <div class="cat-detail g-grid-c10">
+        <div class="g-grid-5">
+            <!-- for each -->
+            {% for cuttingtool in cuttingTools %}
+                <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default; position: relative; height: 260px;">
+                    <a href="/{{ cuttingtool.url_path }}" style="width: 100%; height: 100%;display:block;position: absolute;z-index: 2;top: 0px; left: 0px;"></a>
+                    <div class="general-box-content"
+                        style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
+                        <img alt="hàng có sẵn" src="{% static 'img/instock-tag-category.png' %}" style="position:absolute;top:5px;left:0px;width:50%">
+                    </div>
+                    <a style="position: absolute; text-align: center; top: 50%; transform: translateY(-50%); left: 0px; width: 100%;">
+                        <img alt="{{ cuttingtool.name }}"
+                            src="{% static "" %}img/{{ cuttingtool.img_path }}"
+                            style="max-width: 100%; max-height: 140px;">
+                    </a>
+                    <div class="general-box-header" style="position: absolute; bottom: 0px; width: 100%;">
+                        <h3>
+                            <a style="font-weight: 400;">
+                                {{ cuttingtool.get_name_display }}
+                            </a>
+                        </h3>
+                    </div>
+                </div>
             {% endfor %}
             <!-- end -->
 
