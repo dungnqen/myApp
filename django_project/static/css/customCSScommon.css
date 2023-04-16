@@ -1,3 +1,33 @@
+.container {
+    width: 1230px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@media screen and (max-width: 1239px) {
+    body > div > div:nth-child(2),
+    body > div > div.pre-header > div > div > div.col-md-3,
+    body > div > div.pre-header > div > div > div.col-md-7,
+    body > div > section > div:nth-child(1) {
+        display: none !important;
+    }
+}
+@media screen and (min-width: 870px) and (max-width: 1109px) {
+    .container {
+        width: 870px;
+    }
+}
+@media screen and (min-width: 625px) and (max-width: 869px) {
+    .container {
+        width: 625px;
+    }
+}
+@media screen and (min-width: 380px) and (max-width: 624px) {
+    .container {
+        width: 380px;
+    }
+}
+
 body {
     font-family: Roboto;
     font-style: normal;
@@ -6,11 +36,7 @@ body {
     background-color: #ffffff;
 }
 
-.container {
-    width: 1230px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
+
 
 .d-flex {
     display: flex;

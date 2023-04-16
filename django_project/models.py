@@ -82,6 +82,21 @@ class cuttingTools(models.Model):
         ("DB", "Mũi khoan"),
         ("TT", "Dao tiện"),
         ("HT", "Mũi Taro ren"),
+        ("SC", "Dao đặc biệt"),
+    ])
+    img_path = models.CharField(max_length=64)
+    in_stock_flag = models.BooleanField()
+    url_path = models.CharField(max_length=64)
+    item_desc = models.TextField(blank=True)
+    item_tech_info = models.TextField(blank=True)
+
+    def __str__(self):
+        return f"{self.get_name_display()}"
+
+class rubberParts(models.Model):
+    name = models.TextField(choices=[
+        ("RT", "Ống cao su"),
+        ("OR", "Gioăng cao su"),
     ])
     img_path = models.CharField(max_length=64)
     in_stock_flag = models.BooleanField()
