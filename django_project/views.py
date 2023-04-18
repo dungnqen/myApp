@@ -1,13 +1,14 @@
 from django.http import HttpResponse, HttpRequest
 from django.shortcuts import render
-from .models import Item, linearMotion, cuttingTools
+from .models import Item, linearMotion, cuttingTools, rubberParts
 
 
 def index(request):
   return render(request, "index.html", {
     "items": Item.objects.all(),
     "linearMotions": linearMotion.objects.all(),
-    "cuttingTools": cuttingTools.objects.all()
+    "cuttingTools": cuttingTools.objects.all(),
+    "rubberParts": rubberParts.objects.all()
   })
 
 def item_view(request, item_path):

@@ -127,4 +127,43 @@
     </div>
 </div>
 
+<!-- rubberParts -->
+<div class="category-section-header" style="margin-bottom:10px; padding: 10px 20px">
+    <a href="#rubberparts" style="color: #2e3538">Linh kiện cao su</a>
+    <a class="pull-right" data-toggle="collapse" href="/#rubberparts" style="color: #2e3538">
+        <i class="fa fa-chevron-down"></i>
+    </a>
+</div>
+
+<div id="rubberParts" class="collapse in" style="margin-bottom: 40px;">
+    <div class="cat-detail g-grid-c10">
+        <div class="g-grid-5">
+            <!-- for each -->
+            {% for rubberPart in rubberParts %}
+                <div class="g-grid-cell general-box-icon" style="padding: 0px; cursor: default; position: relative; height: 260px;">
+                    <a href="/{{ rubberPart.url_path }}" style="width: 100%; height: 100%;display:block;position: absolute;z-index: 2;top: 0px; left: 0px;"></a>
+                    <div class="general-box-content"
+                        style="position:relative;text-align:center; padding: 20px; margin-bottom: 10px">
+                        <img alt="hàng có sẵn" src="{% static 'img/instock-tag-category.png' %}" style="position:absolute;top:5px;left:0px;width:50%">
+                    </div>
+                    <a style="position: absolute; text-align: center; top: 50%; transform: translateY(-50%); left: 0px; width: 100%;">
+                        <img alt="{{ rubberPart.name }}"
+                            src="{% static "" %}img/{{ rubberPart.img_path }}"
+                            style="max-width: 100%; max-height: 140px;">
+                    </a>
+                    <div class="general-box-header" style="position: absolute; bottom: 0px; width: 100%;">
+                        <h3>
+                            <a style="font-weight: 400;">
+                                {{ rubberPart.get_name_display }}
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+            {% endfor %}
+            <!-- end -->
+
+        </div>
+    </div>
+</div>
+
 {% endblock %}
